@@ -17,6 +17,9 @@ body {
   height: 100vh;
   background-attachment: fixed;
 }
+h2 {
+  margin: 0;
+}
 .game {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
