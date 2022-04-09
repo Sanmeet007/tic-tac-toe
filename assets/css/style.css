@@ -10,7 +10,7 @@ html {
   color-scheme: dark;
 }
 body {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   background-image: url(../svg/bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,45 +21,12 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 0.5rem;
+  gap: 0.2rem;
   position: relative;
-  margin-inline: auto;
-  max-width: 20rem;
-  max-height: 20rem;
-}
-.line {
-  position: absolute;
-}
-
-.line:nth-child(1),
-.line:nth-child(2) {
-  top: 33.34%;
-  background-color: var(--stroke);
-  left: 0;
-  right: 0;
-  height: 0.5rem;
-  transform: translateY(-50%);
-  border-radius: 10px;
-}
-
-.line:nth-child(2) {
-  top: 66.67%;
-}
-
-.line:nth-child(3),
-.line:nth-child(4) {
-  top: 0;
-  left: 33.34%;
-  width: max(100%, 20rem);
-  height: 0.5rem;
-  background-color: var(--stroke);
-  transform-origin: 0;
-  transform: rotate(90deg);
-  border-radius: 10px;
-}
-
-.line:nth-child(4) {
-  left: 66.67%;
+  background-color: grey;
+  border: none;
+  outline: none;
+  padding: 0;
 }
 
 .tile {
@@ -70,7 +37,7 @@ body {
   justify-content: center;
   font-size: 3rem;
   overflow: hidden;
-  background-color: transparent;
+  background-color: black;
 }
 .events {
   pointer-events: none;
@@ -115,16 +82,16 @@ body {
 .btn {
   border: 1px dotted black;
   padding: 10px 0px;
-  background-color: #fec84e;
-  background-image: linear-gradient(315deg, #fec84e 0%, #ffdea8 74%);
+  background-color: #ffb300;
+  background-image: linear-gradient(#ffb300, #de9b00);
+  color: black;
   font-weight: 900;
   text-transform: uppercase;
-  color: white;
   letter-spacing: 2px;
   transition: 0.5s ease;
   width: 100%;
   border-radius: 4px;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .btn:active {
   background-image: linear-gradient(315deg, #414141 0%, #000000 74%);
