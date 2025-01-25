@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width , initial-scale=1.0  , user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width , initial-scale=1.0  , user-scalable=no"
+    />
     <meta
       name="description"
       content="Play the classic Tic-Tac-Toe game (also called Noughts and Crosses) for free online... 2 Player best game ..."
@@ -76,35 +79,40 @@
     </script>
   </head>
   <body>
-    <h2 class="result space-xl">P1's turn</h2>
+    <div class="container">
+      <div>
+        <button id="btn" class="btn disabled" disabled onclick="reset()">
+          Play Again
+        </button>
+      </div>
 
-    <div class="grid col-3 space">
-      <div>Draw</div>
-      <div id="p1">P1</div>
-      <div id="p2">P2</div>
+      <h2 class="result">P1's turn</h2>
+
+      <div class="grid col-3">
+        <div>Draw</div>
+        <div id="p1">P1</div>
+        <div id="p2">P2</div>
+      </div>
+
+      <div class="grid cols">
+        <div class="draw">0</div>
+        <div class="p1">0</div>
+        <div class="p2">0</div>
+      </div>
+
+      <div class="game">
+        <div id="0" onclick="opt(this)" class="tile"></div>
+        <div id="1" onclick="opt(this)" class="tile"></div>
+        <div id="2" onclick="opt(this)" class="tile"></div>
+        <div id="3" onclick="opt(this)" class="tile"></div>
+        <div id="4" onclick="opt(this)" class="tile"></div>
+        <div id="5" onclick="opt(this)" class="tile"></div>
+        <div id="6" onclick="opt(this)" class="tile"></div>
+        <div id="7" onclick="opt(this)" class="tile"></div>
+        <div id="8" onclick="opt(this)" class="tile"></div>
+      </div>
     </div>
 
-    <div class="grid cols space">
-      <div class="draw">0</div>
-      <div class="p1">0</div>
-      <div class="p2">0</div>
-    </div>
-
-    <div class="game space-up">
-      <div id="0" onclick="opt(this)" class="tile"></div>
-      <div id="1" onclick="opt(this)" class="tile"></div>
-      <div id="2" onclick="opt(this)" class="tile"></div>
-      <div id="3" onclick="opt(this)" class="tile"></div>
-      <div id="4" onclick="opt(this)" class="tile"></div>
-      <div id="5" onclick="opt(this)" class="tile"></div>
-      <div id="6" onclick="opt(this)" class="tile"></div>
-      <div id="7" onclick="opt(this)" class="tile"></div>
-      <div id="8" onclick="opt(this)" class="tile"></div>
-    </div>
-
-    <button id="btn" class="btn disabled" disabled onclick="reset()">
-      Play Again
-    </button>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
