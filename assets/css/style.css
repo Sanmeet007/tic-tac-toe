@@ -121,9 +121,15 @@ h2 {
 }
 .disabled {
   background: rgba(128, 128, 128, 0.66);
-  pointer-events: none;
   transition: 1s ease;
+  pointer-events: none;
+  user-select: none;
 }
+
+div:has(.disabled) {
+  cursor: not-allowed;
+}
+
 @keyframes cool {
   0% {
     transform: rotate(0deg) scale(1);
